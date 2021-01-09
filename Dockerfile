@@ -5,4 +5,4 @@ COPY . /app
 RUN apk add --update build-base libffi-dev libxml2-dev libxslt-dev
 RUN pip3 install -r requirements.txt
 RUN chmod +x *.py
-# ENTRYPOINT ["/app/dnsrecon.py"]
+# ENTRYPOINT ["/app/dnsrecon.py"] # removed to work with ccscanner
